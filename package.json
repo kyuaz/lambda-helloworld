@@ -1,0 +1,19 @@
+{
+  "name": "helloworld-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyuaz/lambda-helloworld.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - sh prj_test.sh
+  build:
+    commands:
+      - zip lambda.zip *.js *.json -r node_modules -q
+  post_build:
+    commands:
+      - sh upload.sh
+      - sh deploy.sh
+
